@@ -13,6 +13,10 @@ export class Message extends Model<Message> {
     @Column({
         type : DataType.STRING
     })
-    name : string
+     message : string
+    @Column ({
+        type: DataType.STRING
+    })
+    topic : string
 }
 

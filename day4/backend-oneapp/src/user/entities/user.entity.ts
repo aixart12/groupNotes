@@ -8,10 +8,12 @@ export class User extends Model<User> {
     @Column
      name : string
     
-    @Column 
-    food : string
+    @Column ({
+        type : DataType.STRING
+    })
+    password : string
+     
 
-    @Column
-    age : number
+    
 
 }

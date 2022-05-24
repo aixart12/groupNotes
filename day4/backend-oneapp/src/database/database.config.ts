@@ -7,5 +7,5 @@ import { SequelizeOptions } from "sequelize-typescript";
     host : "localhost",
     port : 5425, 
     dialect: "postgres",
-    logging : console.log
+    logging : console.log ,
 }

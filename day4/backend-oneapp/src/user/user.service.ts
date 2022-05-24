@@ -11,14 +11,14 @@ export  class UserService  {
      return createUser;
 
   }
-
+  
   async findAll() {
      const createUser = await this.userRepositoy.findAll()
     return createUser ;
   }
 
-  async findOne(id: number) {
-    const findOneUser = await   this.userRepositoy.findOne({where : {id : id}})
+  async findOne(username: string) :Promise<User |undefined> {
+    const findOneUser = await   this.userRepositoy.findOne({where : {name : username}})
     return findOneUser;
   }
 
